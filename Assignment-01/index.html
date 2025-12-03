@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Page using HTML </title>
+</head>
+<body>
+  <header>
+    <h1>Comprehensive HTML-only Demo Page</h1>
+    <p>This page demonstrates a variety of HTML tags: semantic, non-semantic, self-closing, multimedia, tables, and more. No CSS or JavaScript used. Pure HTML.</p>
+    <nav>
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#multimedia">Multimedia</a></li>
+        <li><a href="#table-section">Table Example</a></li>
+        <li><a href="#forms">Form Samples</a></li>
+        <li><a href="#extras">Extras</a></li>
+      </ul>
+    </nav>
+    <hr />
+  </header>
+
+  <main>
+    <section id="intro">
+      <article>
+        <h3>Introduction</h3>
+        <p>The purpose of this long single-file HTML page is to showcase many different HTML elements and their typical usage. Below you'll find headings, paragraphs, lists, images, video, tables, forms, and more.</p>
+        <h6>Sub note</h6>
+        <p>Use semantic tags to improve accessibility and document structure. For example, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;footer&gt;</code> are semantic. Non-semantic tags like <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> are useful for generic grouping.</p>
+      </article>
+
+      <aside>
+        <h3>Quick Facts</h3>
+        <ul>
+          <li>HTML stands for HyperText Markup Language.</li>
+          <li>HTML5 introduced many semantic elements.</li>
+          <li>Self-closing tags used here: <code>&lt;br /&gt;</code>, <code>&lt;hr /&gt;</code>, <code>&lt;img /&gt;</code>, <code>&lt;input /&gt;</code>.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="multimedia">
+      <h3>Multimedia</h3>
+      <p>Images and video are embedded below. Image uses an <code>&lt;img&gt;</code> tag and the video uses the <code>&lt;video&gt;</code> tag with a <code>&lt;source&gt;</code>.</p>
+
+      <figure>
+        <img src="https://www.webmotors.com.br/tabela-fipe/_next/image?url=https%3A%2F%2Fwww.webmotors.com.br%2Fimagens%2Fprod%2F379934%2FLAND_ROVER_RANGE_ROVER_3.0_P550E_PHEV_SV_AWD_AUTOMATICO_37993412494050986.webp&w=1265&q=75" alt="Placeholder image demonstrating the img tag" width="640" height="360" />
+        <figcaption>Figure 1: Example image using the img tag.</figcaption>
+      </figure>
+
+      <p>Line break demonstration follows.<br />This is the next line after a self-closing br tag.</p>
+
+      <figure>
+        <video controls width="640" height="360">
+          <source src="https://www.pexels.com/download/video/2053100/" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Figure 2: Video element with a source fallback message.</figcaption>
+      </figure>
+
+      <p>Audio and other media can also be embedded using <code>&lt;audio&gt;</code> or <code>&lt;embed&gt;</code> when needed.</p>
+    </section>
+
+    <section id="table-section">
+      <h3>Table Example</h3>
+      <p>Tables are best for tabular data. Below is a simple table showing a small dataset.</p>
+
+      <table border="1">
+        <caption>Sample Data Table</caption>
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Topic</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><time datetime="2023-01-01">2023</time></td>
+            <td>HTML Fundamentals</td>
+            <td>95</td>
+          </tr>
+          <tr>
+            <td><time datetime="2024-01-01">2024</time></td>
+            <td>Semantic Markup</td>
+            <td>98</td>
+          </tr>
+          <tr>
+            <td><time datetime="2025-01-01">2025</time></td>
+            <td>Multimedia Integration</td>
+            <td>92</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Note: The <code>&lt;caption&gt;</code> element is a semantic way to describe a table.</p>
+    </section>
+
+    <section id="forms">
+      <h3>Form Samples</h3>
+      <p>Forms collect user input. This example includes a few input types and shows labels for accessibility.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Contact Sample</legend>
+
+          <label for="name">Name:</label>
+          <input id="name" name="name" type="text" placeholder="Your name" />
+          <br />
+
+          <label for="email">Email:</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" />
+          <br />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" cols="40">Enter your message here</textarea>
+          <br />
+
+          <label>
+            <input type="checkbox" name="subscribe" value="yes" /> Subscribe to newsletter
+          </label>
+          <br />
+
+          <input type="submit" value="Send" />
+        </fieldset>
+      </form>
+    </section>
+
+    <section id="extras">
+      <h3>Extra Elements</h3>
+
+      <article>
+        <h4>Lists</h4>
+        <p>Both ordered and unordered lists are useful to show sequences or bullet points.</p>
+        <ol>
+          <li>First ordered item</li>
+          <li>Second ordered item
+            <ul>
+              <li>Nested unordered item</li>
+              <li>Another nested item</li>
+            </ul>
+          </li>
+          <li>Third ordered item</li>
+        </ol>
+      </article>
+
+      <article>
+        <h4>Interactive HTML elements</h4>
+        <p>The <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> tags provide a native disclosure widget.</p>
+        <details>
+          <summary>Click to expand</summary>
+          <p>This content is hidden until the user expands the details element. It is plain HTML content and can contain other tags such as lists, paragraphs, images, and so on.</p>
+        </details>
+      </article>
+
+      <article>
+        <h4>Code and preformatted text</h4>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;...
+        </pre>
+        <p>Use the <code>&lt;pre&gt;</code> and <code>&lt;code&gt;</code> elements to show computer code or preformatted text.</p>
+      </article>
+
+      <article>
+        <h4>Blockquote and cite</h4>
+        <blockquote>
+          <p>Good structure, not more complexity. Simplicity wins in markup.</p>
+          <footer>— A web author</footer>
+        </blockquote>
+      </article>
+
+      <article>
+        <h4>Address</h4>
+        <address>
+          Contact the site maintainer at <a href="mailto:admin@example.com">admin@example.com</a> or visit the office at 123 Example Lane.
+        </address>
+      </article>
+
+    </section>
+
+    <section>
+      <h3>Non-semantic groupings</h3>
+      <div>
+        <p>This paragraph is wrapped in a div, which is a generic container. Use div and span when no semantic element fits.</p>
+        <span>Inline span example</span>
+        <hr />
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <h3>Footer</h3>
+    <p>&copy; <time datetime="2025-12-02">2025</time> HTML Demo Page. All rights reserved.</p>
+    <p>Small non-semantic input sample below.</p>
+    <input type="hidden" name="page-id" value="demo-001" />
+  </footer>
+
+</body>
+</html>
