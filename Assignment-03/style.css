@@ -1,0 +1,18 @@
+body { font-family: Arial; margin: 0; padding: 0; }
+header { background: black; color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center; }
+.navbar a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+.hero { text-align: center; padding: 80px; background: #222; color: white; }
+.hero button { padding: 8px 20px; background: white; border: none; font-weight: bold; cursor: pointer; }
+.highlights { padding: 40px; }
+footer { background: #000; color: white; text-align: center; padding: 10px; }
+
+.about-section { padding: 40px; }
+.skills span { display: inline-block; padding: 8px; margin:5px; border:1px solid black; }
+
+.projects { padding: 40px; }
+.project-container { display: flex; gap: 20px; }
+.card { border:1px solid black; padding:20px; width:30%; }
+
+.contact-section { padding:40px; }
+form input, form textarea { width: 300px; padding:8px; margin:6px 0; }
+button { padding:8px 20px; cursor:pointer; }
